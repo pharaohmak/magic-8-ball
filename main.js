@@ -1,48 +1,39 @@
-let userName = 'Mak';
+function main() {
+    const userQuestion = document.getElementById('question').value;
+    console.log(`You asked: ${userQuestion}`);
 
-userName ? console.log(`Hello, ${userName}!`) :
-    console.log('Hello!');
+    const randomNumber = Math.floor(Math.random() * 8);
+    let eightBallAnswer = '';
 
-const userQuestion = 'Will I become a successful Software Engineer?';
-console.log(`${userName} asked: ${userQuestion}`);
+    switch (randomNumber) {
+        case 0:
+            eightBallAnswer = 'Outlook not so good';
+            break;
+        case 1:
+            eightBallAnswer = 'It is certain';
+            break;
+        case 2:
+            eightBallAnswer = 'It is decidedly so';
+            break;
+        case 3:
+            eightBallAnswer = 'Reply hazy, try again';
+            break;
+        case 4:
+            eightBallAnswer = 'I have a good feeling';
+            break;
+        case 5:
+            eightBallAnswer = 'Do not count on it';
+            break;
+        case 6:
+            eightBallAnswer = 'Indubitably';
+            break;
+        case 7:
+            eightBallAnswer = 'Signs point to yes';
+            break;
+        default:
+            eightBallAnswer = 'Error: try again';
+    }
 
-const randomNumber = Math.floor(Math.random() * 8);
-
-let eightBall = '';
-
-eightBall += randomNumber;
-
-console.log(`The eight ball answered: ${eightBall}`);
-
-switch (randomNumber) {
-    case 0:
-        console.log('Outlook not so good');
-        break;
-    case 1:
-        console.log('It is certain');
-        break;
-    case 2:
-        console.log('It is decidedly so');
-        break;
-    case 3:
-        console.log('Reply hazy try again');
-        break;
-    case 4:
-        console.log('i have a good feeling');
-        break;
-    case 5:
-        console.log('Do not count on it');
-        break;
-    case 6:
-        console.log('Indubedabely');
-        break;
-    case 7:
-        console.log('Outlook not so good');
-        break;
-    case 8:
-        console.log('Signs point to yes');
-        break;
-
-    default:
-        console.log(`The eight ball answered: ${eightBall}`);
+    console.log(`The eight ball answered: ${eightBallAnswer}`);
+    document.getElementById('answer').innerHTML = `${eightBallAnswer}`;
 }
