@@ -1,7 +1,7 @@
-# Magic Eight Ball
+# Magic Eight Ball Game
 
-You’ve learned a powerful tool in JavaScript: control flow! It’s so powerful, in fact, that it can be used to tell someone’s fortune.
+This project is a simple browser-based Magic Eight Ball game where users can ask any question, and the game will provide a random answer. The game is implemented in JavaScript and displays the answer dynamically on a webpage.
 
-In this project we will build the Magic Eight Ball using control flow in JavaScript.
+## Project Description
 
-The user will be able to input a question, then our program will output a random fortune.
+The Magic Eight Ball Game allows users to input a question, which is then answered randomly from a set of predefined responses. The user inputs their question into a text field, and upon submitting, the game displays the answer on the webpage.
